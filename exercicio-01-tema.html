@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 01 - Tema Claro/Escuro</title>
+  <style>
+    /* 1. Tema claro/escuro */
+    :root {
+      color-scheme: light dark;
+      --cor-primaria: #1a5490;
+      --cor-secundaria: #6c757d;
+    }
+    body {
+      color: light-dark(#333b3c, #efefec);
+      background-color: light-dark(#efedea, #223a2c);
+      font-family: Montserrat, system-ui, sans-serif;
+      margin: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Exercício 01 - Tema Claro/Escuro</h1>
+  <p>Este texto muda automaticamente conforme o tema do sistema operativo.</p>
+  <p>Teste alterando as preferências de tema no seu sistema (claro ou escuro).</p>
+</body>
+</html>
