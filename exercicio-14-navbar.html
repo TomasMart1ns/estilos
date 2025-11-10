@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 14 - Navbar</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Montserrat, system-ui, sans-serif;
+    }
+    /* 14. Navbar */
+    nav {
+      background-color: #1a5490;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .navbar-brand {
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.25rem;
+      text-decoration: none;
+    }
+    .navbar-menu {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+    }
+    .navbar-menu a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .navbar-menu a:hover {
+      color: #ddd;
+    }
+    .content {
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#" class="navbar-brand">InfoAlunos</a>
+    <ul class="navbar-menu">
+      <li><a href="#">Início</a></li>
+      <li><a href="#">Serviços</a></li>
+      <li><a href="#">Pagamentos</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <h1>Exercício 14 - Navbar</h1>
+    <p>Esta é uma barra de navegação simples no topo da página.</p>
+  </div>
+</body>
+</html>

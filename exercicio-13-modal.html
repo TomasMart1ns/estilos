@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 13 - Modal</title>
+  <style>
+    body {
+      font-family: Montserrat, system-ui, sans-serif;
+      margin: 2rem;
+      max-width: 600px;
+    }
+    /* 13. Modal */
+    .modal-btn {
+      padding: 0.75rem 1.5rem;
+      background-color: #1a5490;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .modal-btn:hover {
+      background-color: #0e3558;
+    }
+    dialog {
+      padding: 2rem;
+      border: none;
+      border-radius: 4px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+    dialog::backdrop {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    .modal-header {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      color: #1a5490;
+    }
+    .modal-content {
+      color: #666;
+      margin-bottom: 1.5rem;
+    }
+    .modal-actions {
+      display: flex;
+      gap: 1rem;
+      justify-content: flex-end;
+    }
+    .modal-actions button {
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .btn-confirm {
+      background-color: #1a5490;
+      color: #fff;
+    }
+    .btn-cancel {
+      background-color: #ddd;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>Exercício 13 - Modal</h1>
+
+  <button class="modal-btn" onclick="document.getElementById('myModal').showModal()">
+    Abrir Modal
+  </button>
+
+  <dialog id="myModal">
+    <div class="modal-header">Título do Modal</div>
+    <div class="modal-content">
+      <p>Este é um exemplo de diálogo modal. Clique no botão "Cancelar" para fechar.</p>
+    </div>
+    <div class="modal-actions">
+      <button class="btn-confirm">Confirmar</button>
+      <button class="btn-cancel" onclick="document.getElementById('myModal').close()">
+        Cancelar
+      </button>
+    </div>
+  </dialog>
+</body>
+</html>

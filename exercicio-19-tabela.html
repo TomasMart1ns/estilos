@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 19 - Tabela</title>
+  <style>
+    body {
+      font-family: Montserrat, system-ui, sans-serif;
+      margin: 2rem;
+      max-width: 900px;
+    }
+    /* 19. Tabela */
+    .table-container {
+      overflow-x: auto;
+      margin: 1.5rem 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #fff;
+    }
+    table th {
+      background-color: #1a5490;
+      color: #fff;
+      padding: 1rem;
+      text-align: left;
+      font-weight: bold;
+    }
+    table td {
+      padding: 1rem;
+      border-bottom: 1px solid #ddd;
+    }
+    table tr:hover {
+      background-color: #f5f5f5;
+    }
+    table tr:last-child td {
+      border-bottom: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Exercício 19 - Tabela</h1>
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nome</th>
+          <th>Email</th>
+          <th>Data de Inscrição</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>001</td>
+          <td>João Silva</td>
+          <td>joao@email.com</td>
+          <td>2024-01-15</td>
+          <td>Ativo</td>
+        </tr>
+        <tr>
+          <td>002</td>
+          <td>Maria Santos</td>
+          <td>maria@email.com</td>
+          <td>2024-02-20</td>
+          <td>Ativo</td>
+        </tr>
+        <tr>
+          <td>003</td>
+          <td>Pedro Costa</td>
+          <td>pedro@email.com</td>
+          <td>2024-03-10</td>
+          <td>Inativo</td>
+        </tr>
+        <tr>
+          <td>004</td>
+          <td>Ana Oliveira</td>
+          <td>ana@email.com</td>
+          <td>2024-04-05</td>
+          <td>Ativo</td>
+        </tr>
+        <tr>
+          <td>005</td>
+          <td>Carlos Pereira</td>
+          <td>carlos@email.com</td>
+          <td>2024-05-12</td>
+          <td>Ativo</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
